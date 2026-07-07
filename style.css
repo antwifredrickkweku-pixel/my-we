@@ -183,9 +183,11 @@ footer {
     background: #0b1220;
 }
 
+/* ABOUT SECTION */
 .about{
     padding:80px 10%;
     background:#f5f7fa;
+    color:#1e293b;
 }
 
 .about-container{
@@ -220,12 +222,18 @@ footer {
 }
 
 .about-content h3{
+    color:#111827;
     margin-bottom:20px;
 }
 
 .about-content p{
+    color:#374151;
     line-height:1.8;
     margin-bottom:18px;
+}
+
+.about-content strong{
+    color:#111827;
 }
 
 .about-info{
@@ -236,9 +244,10 @@ footer {
 }
 
 .info-box{
-    background:white;
+    background:#ffffff;
     padding:20px;
     border-radius:15px;
+    border:1px solid #d1d5db;
     box-shadow:0 8px 20px rgba(0,0,0,.1);
     transition:.3s;
 }
@@ -250,4 +259,8 @@ footer {
 .info-box h4{
     color:#0077ff;
     margin-bottom:10px;
+}
+
+.info-box p{
+    color:#374151;
 }
