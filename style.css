@@ -281,3 +281,7 @@ footer {
     color: white;
 }
 
+a.card {
+    color: white;
+    text-decoration: none;
+}
