@@ -264,3 +264,10 @@ footer {
 .info-box p{
     color:#374151;
 }
+
+.office-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
