@@ -280,13 +280,3 @@ footer {
     justify-content: center;
 }
 
-.office-link {
-    display: block;
-    width: 100%;
-    color: white;
-    text-decoration: none;
-}
-
-.office-link .card {
-    min-height: 80px;
-}
