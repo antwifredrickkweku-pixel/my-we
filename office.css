@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+
+    background:
+    linear-gradient(
+    rgba(0,40,100,0.8),
+    rgba(0,20,60,0.9)
+    );
+
+    color: white;
+
+    min-height: 100vh;
+
+    padding: 30px;
+
+}
+
+
+/* Header */
+
+header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+
+header h1 {
+
+    color: #00aaff;
+
+}
+
+
+header a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    background: #0078d4;
+
+}
+
+
+
+/* Sections */
+
+section {
+
+    margin: 40px auto;
+
+    max-width: 900px;
+
+}
+
+
+
+/* Titles */
+
+h2 {
+
+    color: #00aaff;
+
+    margin-bottom: 20px;
+
+}
+
+
+h3 {
+
+    margin-top: 25px;
+
+    color: #66d9ff;
+
+}
+
+
+
+/* Skill Cards */
+
+section h3,
+section p {
+
+    background:
+    rgba(255,255,255,0.1);
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    padding: 20px;
+
+}
