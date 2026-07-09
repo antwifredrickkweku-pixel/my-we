@@ -271,3 +271,11 @@ footer {
     text-decoration: none;
     width: 100%;
 }
+
+
+.card {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
