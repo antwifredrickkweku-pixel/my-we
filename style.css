@@ -285,3 +285,10 @@ a.card {
     color: white;
     text-decoration: none;
 }
+a.card,
+a.card:visited,
+a.card:hover,
+a.card:active {
+    color: white !important;
+    text-decoration: none !important;
+}
