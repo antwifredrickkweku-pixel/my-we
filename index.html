@@ -1,233 +1,208 @@
-<!DOCTYPE html>
+!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fredrick Kweku Antwi | Portfolio</title>
-
+    <meta name="description" content="Portfolio of Fredrick Kweku Antwi, an Electrical and Electronic Engineering student and front-end web developer.">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#home">Fredrick.</a>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-<header>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<nav>
-
-<h2 class="logo">Fredrick.</h2>
-
-<ul class="nav-links">
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#skills">Skills</a></li>
-
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</header>
-
-<section id="about" class="about">
-    <div class="about-container">
-
-        <div class="about-image">
-            <img src="images/profile.jpg" alt="Fredrick Kweku Antwi">
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Electrical Engineering Student / Front-End Developer</p>
+          <h1>Hi, I'm <span>Fredrick Kweku Antwi</span></h1>
+          <p>
+            I build responsive websites while studying Electrical and Electronic Engineering.
+            My goal is to combine engineering, software, automation, and emerging technology
+            to create useful solutions.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
+          </div>
         </div>
 
-        <div class="about-content">
-            <h2>About Me</h2>
+        <div class="hero-card" aria-label="Portfolio summary">
+          <div class="profile-frame">
+            <img src="images/profile.jpg" alt="Fredrick Kweku Antwi" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="profile-fallback">FKA</div>
+          </div>
+          <div>
+            <h2>Engineering + Web Development</h2>
+            <p>BTech Electrical & Electronic Engineering student at Accra Technical University, Ghana.</p>
+          </div>
+        </div>
+      </section>
 
-            <h3>Hello, I'm Fredrick Kweku Antwi 👋</h3>
-
-            <p>
-                I am a <strong>BTech Electrical & Electronic Engineering</strong> student at
-                <strong>Accra Technical University</strong>, Ghana. I am passionate about
-                technology, engineering, and creating innovative solutions that improve lives.
-            </p>
-
-            <p>
-                Beyond engineering, I enjoy building modern, responsive websites using
-                <strong>HTML, CSS, JavaScript, Git, and GitHub</strong>. Every project I build
-                helps me grow as a developer while strengthening my problem-solving skills.
-            </p>
-
-            <p>
-                I believe technology has the power to transform the world. My ambition is to
-                become an outstanding Electrical & Electronics Engineer while expanding my
-                expertise in software development, automation, artificial intelligence, and
-                emerging technologies.
-            </p>
-
-            <div class="about-info">
-
-                <div class="info-box">
-                    <h4>🎓 Education</h4>
-                    <p>BTech Electrical & Electronic Engineering<br>Accra Technical University</p>
-                </div>
-
-                <div class="info-box">
-                    <h4>💻 Skills</h4>
-                    <p>HTML • CSS • JavaScript • Git • GitHub • Microsoft Office</p>
-                </div>
-
-                <div class="info-box">
-                    <h4>🎯 Career Goal</h4>
-                    <p>To become a professional Electrical Engineer and Full-Stack Developer creating innovative technology solutions.</p>
-                </div>
-
-                <div class="info-box">
-                    <h4>⚡ Interests</h4>
-                    <p>Electrical Engineering, Web Development, AI, Robotics, Renewable Energy & Space Technology.</p>
-                </div>
-
-            </div>
+      <section id="about" class="about section">
+        <div class="section-heading">
+          <p class="eyebrow">About Me</p>
+          <h2>Passionate about technology, engineering, and building useful digital experiences.</h2>
         </div>
 
-    </div>
-</section>
+        <div class="about-grid">
+          <div class="about-content">
+            <h3>Hello, I'm Fredrick Kweku Antwi</h3>
+            <p>
+              I am a <strong>BTech Electrical & Electronic Engineering</strong> student at
+              <strong>Accra Technical University</strong>, Ghana. I enjoy creating modern,
+              responsive websites with <strong>HTML, CSS, JavaScript, Git, and GitHub</strong>.
+            </p>
+            <p>
+              Every project helps me grow as a developer while strengthening my problem-solving
+              skills. I am especially interested in software development, automation, artificial
+              intelligence, robotics, renewable energy, and space technology.
+            </p>
+          </div>
 
-<section id="about">
+          <div class="about-info">
+            <article class="info-box">
+              <h4>Education</h4>
+              <p>BTech Electrical & Electronic Engineering<br>Accra Technical University</p>
+            </article>
+            <article class="info-box">
+              <h4>Current Focus</h4>
+              <p>Front-end development, responsive design, JavaScript, Git, and GitHub.</p>
+            </article>
+            <article class="info-box">
+              <h4>Career Goal</h4>
+              <p>To become a professional Electrical Engineer and Full-Stack Developer.</p>
+            </article>
+            <article class="info-box">
+              <h4>Interests</h4>
+              <p>Electrical engineering, AI, robotics, renewable energy, and space technology.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<h2>About Me</h2>
+      <section id="skills" class="skills section">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools and knowledge I am building with.</h2>
+        </div>
 
-<p>
+        <div class="skills-container">
+          <article class="card">
+            <span>01</span>
+            <h3>HTML5</h3>
+            <p>Semantic structure for clean and accessible websites.</p>
+          </article>
 
-I am currently pursuing a BTech in Electrical and Electronic Engineering while learning front-end web development.
+          <article class="card">
+            <span>02</span>
+            <h3>CSS3</h3>
+            <p>Responsive layouts, modern styling, and smooth animations.</p>
+          </article>
 
-I enjoy building websites, learning new technologies and improving my programming skills every day.
+          <article class="card">
+            <span>03</span>
+            <h3>JavaScript</h3>
+            <p>Interactive web pages and practical front-end features.</p>
+          </article>
 
-</p>
+          <a href="office.html" class="card linked-card">
+            <span>04</span>
+            <h3>Microsoft Office</h3>
+            <p>Word, Excel, document formatting, and productivity tools.</p>
+          </a>
 
-</section>
+          <a href="electrical.html" class="card linked-card">
+            <span>05</span>
+            <h3>Electrical Installation</h3>
+            <p>View my engineering portfolio and practical electrical work.</p>
+          </a>
+        </div>
+      </section>
 
-<section id="skills">
+      <section id="projects" class="projects section">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work and upcoming builds.</h2>
+        </div>
 
-<h2>Skills</h2>
+        <div class="projects-grid">
+          <article class="project">
+            <p class="project-tag">Live Project</p>
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive portfolio built with HTML, CSS, and JavaScript to present my skills, education, and projects.</p>
+            <a href="#home">View on this page</a>
+          </article>
 
-<div class="skills-container">
+          <article class="project">
+            <p class="project-tag">Coming Soon</p>
+            <h3>Calculator App</h3>
+            <p>A JavaScript calculator project for practicing functions, events, and user interface logic.</p>
+          </article>
 
-<div class="card">
-<h3>HTML5</h3>
-<p>Semantic and modern HTML.</p>
-</div>
+          <article class="project">
+            <p class="project-tag">Coming Soon</p>
+            <h3>Weather App</h3>
+            <p>A weather application that will use an API to display forecasts and current conditions.</p>
+          </article>
+        </div>
+      </section>
 
-<div class="card">
-<h3>CSS3</h3>
-<p>Responsive layouts and animations.</p>
-</div>
+      <section id="contact" class="contact section">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's connect and build something meaningful.</h2>
+          <div class="contact-info">
+            <p>Phone: <a href="tel:+233249583107">+233 249 583 107</a></p>
+            <p>Email: <a href="mailto:antwifredrickkweku@gmail.com">antwifredrickkweku@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/233531839120" target="_blank" rel="noreferrer">Chat with me</a></p>
+          </div>
+        </div>
 
-<div class="card">
-<h3>JavaScript</h3>
-<p>Interactive web applications.</p>
-</div>
+        <form class="contact-form">
+          <label>
+            <span>Your Name</span>
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </label>
+          <label>
+            <span>Your Email</span>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </label>
+          <label>
+            <span>Your Message</span>
+            <textarea name="message" placeholder="Write your message" required></textarea>
+          </label>
+          <button type="submit">Send Message</button>
+          <p class="form-note" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
 
-<a href="office.html" class="office-link">
-    <div class="card">
-        🖥️ Microsoft Office
-        <P>Word And Excel</P>
-    </div>
-</a>
+    <footer>
+      <p>© 2026 Fredrick Kweku Antwi | All Rights Reserved</p>
+    </footer>
 
- <a href="electrical.html"> 
-     <div class="card">
-        ⚡ Electrical Installation
-        <p>Click to view my engineering portfolio →</p>
-     </div>
-    </a>
-    
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="project">
-
-<h3>Personal Portfolio Website</h3>
-
-<p>
-
-A modern responsive portfolio built using HTML, CSS and JavaScript.
-
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>Future Calculator App</h3>
-
-<p>
-
-Coming Soon...
-
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>Weather App</h3>
-
-<p>
-
-Coming Soon...
-
-</p>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact Me</h2>
-
-<div class="contact-info">
-
-<p>📞 Phone: <a href="tel:+233249583107">+233 249583107</a></p>
-
-<p>📧 Email: <a href="mailto:freddieselectricals@gmail.com">antwifredrickkweku@gmail.com</a></p>
-
-<p>
-💬 WhatsApp: 
-<a href="https://wa.me/233531839120" target="_blank">
-Chat with me
-</a>
-</p>
-
-</div>
-
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Your Message" required></textarea>
-<button type="submit">Send Message</button>
-</form>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 Fredrick Kweku Antwi | All Rights Reserved
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
+
