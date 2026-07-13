@@ -5,6 +5,14 @@ const contactForm = document.querySelector(".contact-form");
 const formNote = document.querySelector(".form-note");
 const revealItems = document.querySelectorAll(".section, .highlights, .card, .project");
 
+window.addEventListener("pointermove", (event) => {
+  const x = `${Math.round((event.clientX / window.innerWidth) * 100)}%`;
+  const y = `${Math.round((event.clientY / window.innerHeight) * 100)}%`;
+
+  document.documentElement.style.setProperty("--mouse-x", x);
+  document.documentElement.style.setProperty("--mouse-y", y);
+});
+
 menuToggle?.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("open");
   menuToggle.setAttribute("aria-expanded", String(isOpen));
@@ -69,3 +77,5 @@ contactForm?.addEventListener("submit", (event) => {
   window.location.href = `mailto:antwifredrickkweku@gmail.com?subject=${subject}&body=${body}`;
   formNote.textContent = "Opening your email app with the message ready to send.";
 });
+
+  
