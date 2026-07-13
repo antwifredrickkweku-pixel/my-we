@@ -25,163 +25,177 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Beginner Friendly / HTML / CSS / JavaScript</p>
-          <h1>Learn coding by reading, trying, breaking, and fixing.</h1>
+      <section class="camp-welcome">
+        <div class="welcome-panel">
+          <p class="eyebrow">Welcome Coder</p>
+          <h1>Hello coder, welcome to <span>FREDDIE'S CODING CAMP</span>.</h1>
           <p>
-            This page gives beginners the basic tools, simple tips, and a live practice area
-            where they can write code and see the output immediately.
+            This is your learning space for practicing HTML, CSS, JavaScript,
+            building confidence, and asking for help when you get stuck.
           </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#playground">Start Practicing</a>
-            <a class="btn secondary" href="#help">Ask for Help</a>
-          </div>
-        </div>
-
-        <div class="learning-card">
-          <span class="code-chip">&lt;/&gt;</span>
-          <h2>Beginner path</h2>
-          <ol>
-            <li>Learn HTML structure</li>
-            <li>Style with CSS</li>
-            <li>Add JavaScript interaction</li>
-            <li>Build small projects</li>
-          </ol>
+          <button class="enter-camp" type="button">Enter Learning Space</button>
         </div>
       </section>
 
-      <section id="tools" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Necessary Tools</p>
-          <h2>What a beginner needs to start coding.</h2>
-        </div>
-
-        <div class="tools-grid">
-          <article class="tool-card">
-            <span>01</span>
-            <h3>Code Editor</h3>
-            <p>Use Visual Studio Code to write HTML, CSS, and JavaScript files clearly.</p>
-          </article>
-          <article class="tool-card">
-            <span>02</span>
-            <h3>Web Browser</h3>
-            <p>Use Chrome, Edge, or Firefox to open your website and test changes.</p>
-          </article>
-          <article class="tool-card">
-            <span>03</span>
-            <h3>Git & GitHub</h3>
-            <p>Save project history, upload code, and publish websites online.</p>
-          </article>
-          <article class="tool-card">
-            <span>04</span>
-            <h3>Internet Research</h3>
-            <p>Use documentation, tutorials, and examples to solve problems step by step.</p>
-          </article>
-          <article class="tool-card">
-            <span>05</span>
-            <h3>Practice Projects</h3>
-            <p>Build a portfolio, calculator, landing page, quiz app, and weather app.</p>
-          </article>
-          <article class="tool-card">
-            <span>06</span>
-            <h3>Consistency</h3>
-            <p>Practice daily, even if it is only 30 minutes. Small progress compounds.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="playground" class="section playground-section">
-        <div class="section-heading">
-          <p class="eyebrow">Live Practice</p>
-          <h2>Write code and see the output instantly.</h2>
-        </div>
-
-        <div class="playground">
-          <div class="editor-grid">
-            <label>
-              <span>HTML</span>
-              <textarea id="htmlCode" spellcheck="false"></textarea>
-            </label>
-            <label>
-              <span>CSS</span>
-              <textarea id="cssCode" spellcheck="false"></textarea>
-            </label>
-            <label>
-              <span>JavaScript</span>
-              <textarea id="jsCode" spellcheck="false"></textarea>
-            </label>
-          </div>
-
-          <div class="preview-panel">
-            <div class="preview-header">
-              <strong>Output Preview</strong>
-              <button class="reset-code" type="button">Reset Example</button>
+      <div class="learning-space" hidden>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Beginner Friendly / HTML / CSS / JavaScript</p>
+            <h1>Learn coding by reading, trying, breaking, and fixing.</h1>
+            <p>
+              This page gives beginners the basic tools, simple tips, and a live practice area
+              where they can write code and see the output immediately.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#playground">Start Practicing</a>
+              <a class="btn secondary" href="#help">Ask for Help</a>
             </div>
-            <iframe id="codePreview" title="Live code output"></iframe>
           </div>
-        </div>
-      </section>
 
-      <section class="section tips-section">
-        <div class="section-heading">
-          <p class="eyebrow">Beginner Tips</p>
-          <h2>Simple rules that make learning easier.</h2>
-        </div>
+          <div class="learning-card">
+            <span class="code-chip">&lt;/&gt;</span>
+            <h2>Beginner path</h2>
+            <ol>
+              <li>Learn HTML structure</li>
+              <li>Style with CSS</li>
+              <li>Add JavaScript interaction</li>
+              <li>Build small projects</li>
+            </ol>
+          </div>
+        </section>
 
-        <div class="tips-grid">
-          <article>
-            <h3>Do not memorize everything</h3>
-            <p>Understand the idea, then search when you forget syntax. Real developers search too.</p>
-          </article>
-          <article>
-            <h3>Build small projects</h3>
-            <p>One small finished project teaches more than many unfinished tutorials.</p>
-          </article>
-          <article>
-            <h3>Read errors slowly</h3>
-            <p>Error messages usually point to the file, line, or concept causing the problem.</p>
-          </article>
-          <article>
-            <h3>Practice layout first</h3>
-            <p>Master headings, sections, cards, navigation, forms, and responsive design.</p>
-          </article>
-        </div>
-      </section>
+        <section id="tools" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Necessary Tools</p>
+            <h2>What a beginner needs to start coding.</h2>
+          </div>
 
-      <section id="help" class="section help-section">
-        <div class="help-copy">
-          <p class="eyebrow">Help Tag</p>
-          <h2>Stuck? Send your coding problem to Fredrick.</h2>
-          <p>
-            Describe the problem clearly. Include what you expected, what happened,
-            and any error message you saw.
-          </p>
-        </div>
+          <div class="tools-grid">
+            <article class="tool-card">
+              <span>01</span>
+              <h3>Code Editor</h3>
+              <p>Use Visual Studio Code to write HTML, CSS, and JavaScript files clearly.</p>
+            </article>
+            <article class="tool-card">
+              <span>02</span>
+              <h3>Web Browser</h3>
+              <p>Use Chrome, Edge, or Firefox to open your website and test changes.</p>
+            </article>
+            <article class="tool-card">
+              <span>03</span>
+              <h3>Git & GitHub</h3>
+              <p>Save project history, upload code, and publish websites online.</p>
+            </article>
+            <article class="tool-card">
+              <span>04</span>
+              <h3>Internet Research</h3>
+              <p>Use documentation, tutorials, and examples to solve problems step by step.</p>
+            </article>
+            <article class="tool-card">
+              <span>05</span>
+              <h3>Practice Projects</h3>
+              <p>Build a portfolio, calculator, landing page, quiz app, and weather app.</p>
+            </article>
+            <article class="tool-card">
+              <span>06</span>
+              <h3>Consistency</h3>
+              <p>Practice daily, even if it is only 30 minutes. Small progress compounds.</p>
+            </article>
+          </div>
+        </section>
 
-        <form class="help-form">
-          <label>
-            <span>Your Email</span>
-            <input type="email" name="learnerEmail" required>
-          </label>
-          <label>
-            <span>Topic</span>
-            <select name="topic" required>
-              <option value="HTML">HTML</option>
-              <option value="CSS">CSS</option>
-              <option value="JavaScript">JavaScript</option>
-              <option value="GitHub">GitHub</option>
-              <option value="Other">Other</option>
-            </select>
-          </label>
-          <label>
-            <span>Your Problem</span>
-            <textarea name="problem" placeholder="Write your problem here..." required></textarea>
-          </label>
-          <button type="submit">Send Help Request</button>
-          <p class="help-note" aria-live="polite"></p>
-        </form>
-      </section>
+        <section id="playground" class="section playground-section">
+          <div class="section-heading">
+            <p class="eyebrow">Live Practice</p>
+            <h2>Write code and see the output instantly.</h2>
+          </div>
+
+          <div class="playground">
+            <div class="editor-grid">
+              <label>
+                <span>HTML</span>
+                <textarea id="htmlCode" spellcheck="false"></textarea>
+              </label>
+              <label>
+                <span>CSS</span>
+                <textarea id="cssCode" spellcheck="false"></textarea>
+              </label>
+              <label>
+                <span>JavaScript</span>
+                <textarea id="jsCode" spellcheck="false"></textarea>
+              </label>
+            </div>
+
+            <div class="preview-panel">
+              <div class="preview-header">
+                <strong>Output Preview</strong>
+                <button class="reset-code" type="button">Reset Example</button>
+              </div>
+              <iframe id="codePreview" title="Live code output"></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section class="section tips-section">
+          <div class="section-heading">
+            <p class="eyebrow">Beginner Tips</p>
+            <h2>Simple rules that make learning easier.</h2>
+          </div>
+
+          <div class="tips-grid">
+            <article>
+              <h3>Do not memorize everything</h3>
+              <p>Understand the idea, then search when you forget syntax. Real developers search too.</p>
+            </article>
+            <article>
+              <h3>Build small projects</h3>
+              <p>One small finished project teaches more than many unfinished tutorials.</p>
+            </article>
+            <article>
+              <h3>Read errors slowly</h3>
+              <p>Error messages usually point to the file, line, or concept causing the problem.</p>
+            </article>
+            <article>
+              <h3>Practice layout first</h3>
+              <p>Master headings, sections, cards, navigation, forms, and responsive design.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="help" class="section help-section">
+          <div class="help-copy">
+            <p class="eyebrow">Help Tag</p>
+            <h2>Stuck? Send your coding problem to Fredrick.</h2>
+            <p>
+              Describe the problem clearly. Include what you expected, what happened,
+              and any error message you saw.
+            </p>
+          </div>
+
+          <form class="help-form">
+            <label>
+              <span>Your Email</span>
+              <input type="email" name="learnerEmail" required>
+            </label>
+            <label>
+              <span>Topic</span>
+              <select name="topic" required>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="GitHub">GitHub</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+            <label>
+              <span>Your Problem</span>
+              <textarea name="problem" placeholder="Write your problem here..." required></textarea>
+            </label>
+            <button type="submit">Send Help Request</button>
+            <p class="help-note" aria-live="polite"></p>
+          </form>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -191,3 +205,4 @@
     <script src="coding-learning.js"></script>
   </body>
 </html>
+
