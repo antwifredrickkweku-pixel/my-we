@@ -50,7 +50,8 @@ a {
 .nav,
 .hero,
 .section,
-.signup-gate {
+.signup-gate,
+.camp-welcome {
   width: min(1120px, calc(100% - 36px));
   margin: 0 auto;
 }
@@ -94,6 +95,7 @@ a {
 }
 
 .signup-panel,
+.welcome-panel,
 .learning-card,
 .tool-card,
 .playground,
@@ -110,6 +112,40 @@ a {
 .signup-panel {
   max-width: 680px;
   padding: clamp(28px, 5vw, 54px);
+}
+
+.camp-welcome {
+  min-height: calc(100vh - 74px);
+  display: grid;
+  place-items: center;
+  padding: 70px 0;
+}
+
+.welcome-panel {
+  position: relative;
+  overflow: hidden;
+  max-width: 860px;
+  padding: clamp(30px, 6vw, 68px);
+  text-align: center;
+}
+
+.welcome-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0 34%, rgba(255, 255, 255, 0.18) 46%, transparent 58% 100%);
+  animation: welcomeShine 5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.welcome-panel h1 span {
+  color: var(--primary);
+}
+
+.enter-camp {
+  width: auto;
+  margin-top: 28px;
+  padding-inline: 24px;
 }
 
 .eyebrow {
@@ -384,7 +420,8 @@ footer {
 
   .hero,
   .section,
-  .signup-gate {
+  .signup-gate,
+  .camp-welcome {
     width: min(100% - 28px, 1120px);
   }
 
@@ -399,3 +436,15 @@ footer {
     width: 100%;
   }
 }
+
+@keyframes welcomeShine {
+  0%,
+  45% {
+    transform: translateX(-70%);
+  }
+
+  100% {
+    transform: translateX(70%);
+  }
+}
+
