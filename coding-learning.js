@@ -1,5 +1,8 @@
 const helpForm = document.querySelector(".help-form");
 const helpNote = document.querySelector(".help-note");
+const welcomeScreen = document.querySelector(".camp-welcome");
+const learningSpace = document.querySelector(".learning-space");
+const enterCamp = document.querySelector(".enter-camp");
 const htmlCode = document.querySelector("#htmlCode");
 const cssCode = document.querySelector("#cssCode");
 const jsCode = document.querySelector("#jsCode");
@@ -12,6 +15,13 @@ const savedEmail = localStorage.getItem("codingHubEmail");
 if (signedUp !== "true") {
   window.location.href = "learn-coding.html";
 }
+
+enterCamp?.addEventListener("click", () => {
+  welcomeScreen.hidden = true;
+  learningSpace.hidden = false;
+  loadStarterCode();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 const starterCode = {
   html: `<section class="card">
@@ -95,4 +105,4 @@ if (savedEmail && helpForm?.elements.learnerEmail) {
   helpForm.elements.learnerEmail.value = savedEmail;
 }
 
-loadStarterCode();
+
