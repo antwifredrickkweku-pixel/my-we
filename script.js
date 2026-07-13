@@ -3,6 +3,7 @@ const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-links a");
 const contactForm = document.querySelector(".contact-form");
 const formNote = document.querySelector(".form-note");
+const revealItems = document.querySelectorAll(".section, .highlights, .card, .project");
 
 menuToggle?.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("open");
@@ -34,6 +35,27 @@ const setActiveLink = () => {
 window.addEventListener("scroll", setActiveLink);
 setActiveLink();
 
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  revealItems.forEach((item) => {
+    item.classList.add("reveal");
+    revealObserver.observe(item);
+  });
+} else {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+}
+
 contactForm?.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -47,4 +69,3 @@ contactForm?.addEventListener("submit", (event) => {
   window.location.href = `mailto:antwifredrickkweku@gmail.com?subject=${subject}&body=${body}`;
   formNote.textContent = "Opening your email app with the message ready to send.";
 });
-
